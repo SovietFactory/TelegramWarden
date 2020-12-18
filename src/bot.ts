@@ -7,6 +7,8 @@ config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
+bot.command('help', (ctx) => ctx.reply('Welcome to the CUM zone. Only CUM inside enemy Girls'))
+
 bot.use(async (ctx, next) => {
   const start = new Date();
   await next();
@@ -72,3 +74,4 @@ bot.on('text', (ctx) => {
 });
 
 bot.launch();
+console.log(123);
